@@ -13,7 +13,7 @@
 # Documentation:
 # @raycast.author kowwwwji
 
+PROFILE=`echo $1 | tr 'a-z' 'A-Z'`
+/Library/Application\ Support/org.pqrs/Karabiner-Elements/bin/karabiner_cli --select-profile ${PROFILE}
 
-/Library/Application\ Support/org.pqrs/Karabiner-Elements/bin/karabiner_cli --select-profile $1
-
-echo "Set $1 Profile"
+echo "Set ${PROFILE} Profile"
