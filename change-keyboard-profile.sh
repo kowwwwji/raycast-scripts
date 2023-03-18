@@ -16,4 +16,8 @@
 PROFILE=`echo $1 | tr 'a-z' 'A-Z'`
 /Library/Application\ Support/org.pqrs/Karabiner-Elements/bin/karabiner_cli --select-profile ${PROFILE}
 
+# 再起動しないとキーボード種類が変わらないので、プロセスキルする。起動は多分Karabinerでやっている。
+pkill -f Karabiner -9
+pkill -f karabiner -9
+
 echo "Set ${PROFILE} Profile"
