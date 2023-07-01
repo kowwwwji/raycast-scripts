@@ -7,7 +7,7 @@
 # @raycast.mode silent
 
 # Optional parameters:
-# @raycast.icon 🚀
+# @raycast.icon ⌨️
 # @raycast.argument1 { "type": "text", "placeholder": "Placeholder" }
 
 # Documentation:
